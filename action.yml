@@ -23,10 +23,10 @@ outputs:
   comment:
     description: "The comment from chatgpt."
 runs:
-  using: "node16"
+  using: "composite"
   steps:
     - name: Set Node.js 18.x
       uses: actions/setup-node@v3.6.0
       with:
         node-version: 18.x
-  main: "dist/index.js"
+    main: "dist/index.js"
